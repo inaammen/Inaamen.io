@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>INAAM - Coming Soon</title>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
+        background: #f4f4f4;
+    }
+
+    /* Navbar */
+    .navbar {
+        width: 100%;
+        padding: 20px 60px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: white;
+        position: fixed;
+        top: 0;
+        z-index: 1000;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    }
+
+    .logo {
+        font-size: 20px;
+        font-weight: bold;
+        letter-spacing: 2px;
+    }
+
+    .nav-links a {
+        text-decoration: none;
+        margin: 0 15px;
+        color: black;
+        font-size: 14px;
+        transition: 0.3s;
+    }
+
+    .nav-links a:hover {
+        color: #b22222;
+    }
+
+    /* Coming Soon Section */
+    .coming-container {
+        height: 100vh;
+        width: 100%;
+        margin-top: 80px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        background: #000;
+    }
+
+    .coming-container img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        filter: blur(2px) brightness(60%);
+    }
+
+    .coming-content {
+        position: absolute;
+        text-align: center;
+        color: white;
+    }
+
+    .coming-content h1 {
+        font-size: 60px;
+        letter-spacing: 3px;
+    }
+
+    .coming-content p {
+        margin-top: 15px;
+        font-size: 18px;
+        opacity: 0.8;
+    }
+
+    .btn {
+        margin-top: 30px;
+        padding: 12px 30px;
+        border: 1px solid white;
+        background: transparent;
+        color: white;
+        font-size: 14px;
+        cursor: pointer;
+        transition: 0.3s;
+        border-radius: 30px;
+    }
+
+    .btn:hover {
+        background: white;
+        color: black;
+    }
+
+    @media(max-width:768px){
+        .coming-content h1 {
+            font-size: 35px;
+        }
+        .navbar {
+            padding: 15px 20px;
+        }
+    }
+
+</style>
+</head>
+
+<body>
+
+<!-- Navbar -->
+<div class="navbar">
+    <div class="logo">INAAM</div>
+    <div class="nav-links">
+        <a href="#">Men</a>
+        <a href="#">Women</a>
+        <a href="#">Kids</a>
+        <a href="#">Featured</a>
+    </div>
+</div>
+
+<!-- Coming Soon Section -->
+<div class="coming-container">
+    <img src="coming-soon.jpg" alt="Coming Soon">
+    <div class="coming-content">
+        <h1>COMING SOON</h1>
+        <p>This photo contains something you may find exciting.</p>
+        <button class="btn">Stay Tuned</button>
+    </div>
+</div>
+
+</body>
+  </html>
